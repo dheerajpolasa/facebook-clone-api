@@ -5,6 +5,7 @@ const cors = require("cors");
 const { verify } = require("jsonwebtoken");
 const mongoose = require('mongoose');
 const db = require('./config/mongoose')
+const passportJWT = require('./config/passport-jwt-strategy');
 
 const app = express();
 app.use(cookieParser());
